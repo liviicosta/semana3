@@ -1,0 +1,422 @@
+html, body{
+    margin: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
+
+#logo {
+    width: 51px;
+    height: 48px;
+    cursor: pointer;
+    padding-left: 5px;
+}
+/*como q aparece o menu lá em cima no pc e o de lado no celular?*/
+#menu{
+    visibility: hidden; /*escondendo o menu original*/
+}
+#menu_vw{ /*editando o novo menu*/
+    visibility: visible;
+    background-color: rgba(0, 59, 0, 0.699);
+    height: 700px;
+    width: 300px;
+    position: absolute;
+    transition: all .2s linear;
+    left: -300px;        
+    z-index: 11;
+}
+#nav-menu2{
+    width: 100%;
+    position: absolute;
+    
+}
+#nav-menu2 a{
+    text-decoration: none;
+}
+#nav-menu2 a div{
+    background-color: rgba(0, 59, 0, 0.699);;
+    padding: 20px;
+    transition: all .2s linear;
+    color: wheat;
+    border-bottom: 2px solid wheat;
+    margin-top: 2px;
+}
+#nav-menu2 a div:hover{
+    background-color: rgb(0, 68, 45);
+}
+#check {
+    display: none;
+}
+
+#check:checked ~ #menu_vw{
+   transform: translateX(300px);
+}
+
+
+/*MENU DE CIMA AS IMAGENS TÃO PASSANDO POR CIMA SOCRRO*/
+#cabeçalho {
+    background-color:rgba(0, 59, 0, 0.808) ;
+    color: whitesmoke;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    padding-top: 7px;
+    padding-bottom: 2px;
+}
+li {
+    float: left;
+    padding: 19px;
+}
+li a{
+    float: left;
+    padding: 20px 100px 20px 10px;
+    list-style: none;
+    margin-top: 0px;
+    text-decoration: none;
+}
+.li a:hover {
+    color: whitesmoke;
+}
+li:hover {
+    background-color: yellowgreen;
+}
+#menu {
+    float: right;
+    margin-right: 5%;
+    list-style: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+}
+#menu_vw {
+    visibility: hidden;
+}
+#menu {
+    visibility: hidden;
+}
+#menu_vw {
+    visibility: visible;
+    background-color: rgb(0, 59, 0);
+    height: 700px;
+    width: 300px;
+    position: absolute;
+    transition: all .2s linear;
+    left: -300px;
+    z-index: 11;
+}
+#nav-menu2 {
+    width: 100%;
+    position: absolute;
+}
+#nav-menu2 a{
+    text-decoration: none;
+}
+#nav-menu2 a div{
+    background-color: rgba(29, 131, 4, 0.671);
+    padding: 20px;
+    transition: all .2s linear;
+    color: whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+}
+#nav-menu2 a div:hover{
+    background-color: rgb(0, 59, 0);
+}
+#check:checked ~ #menu_vw{
+    transform: translateX(300px);
+}
+
+
+
+
+
+
+#imagem_fundo {
+    background: url("imagens/verduras.jpg");
+    background-size: 100% 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+} 
+#titulo {
+    color: whitesmoke;
+    margin: 20% 10% 0 18%;
+    padding-top: 10px; 
+    text-shadow: rgba(56, 55, 55, 0.815) 2px 1px;
+
+}
+#subtitulo {
+    color: whitesmoke;
+    margin: 5% 12% 5% 22%;
+    text-shadow: rgba(56, 55, 55, 0.815) 2px 1px 
+}
+#acao {
+    color: whitesmoke;
+    margin: 10% 12% 0 25%;
+    border: 1px white solid;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+}
+#acao:hover {
+    font-size: 14pt;
+    transition: all 300ms ease;
+}
+
+
+
+
+#explicacao_ods {
+    background-color: #f7f7f7; 
+    padding: 50px;
+    float: left;   
+    color: gray;
+}  
+.justificado {
+    text-align: justify;
+}
+#topico1 {
+    text-align: center;
+    color: greenyellow;
+    font-size: 20pt;
+    text-shadow: rgba(85, 85, 85, 0.815) 1px 1px;
+}
+
+.coluna {
+    float: left;
+    padding: 0 5%;
+    position: relative;
+    width: 40%;
+}
+
+#cartilha_ods {
+    width: 100%;
+    margin-top: 10%;
+}
+
+#explicacao_ods2 {
+    background-color: rgb(214, 241, 159);
+    padding: 5%;
+    margin-top: 5%;
+    text-shadow: rgba(85, 85, 85, 0.815) 1px 1px;
+}
+#fome_zero{
+    text-align: center;
+}
+
+
+#objetivos {
+    background-color: #f7f7f7 ;
+    padding: 10px 0;
+    float: left;
+    margin-right: 0;
+    margin-bottom: 10px;
+    margin-top: 0;
+    color: gray;
+}
+#objetivos h2 {
+    color: greenyellow;
+    font-size: 20pt;
+    text-shadow: rgba(85, 85, 85, 0.815) 1px 1px;
+}
+
+.numeros {
+    width: 51px;
+    height: 48px;
+}
+.numeros:hover {
+    width: 65px;
+    height: 65px;
+    border-radius: 13px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+#um:hover {background-color: rgba(215, 233, 55, 0.842);}
+#dois:hover {background-color: rgba(241, 93, 162, 0.795);}
+#tres:hover {background-color: rgba(226, 118, 248, 0.733);}
+#quatro:hover {background-color: rgba(136, 219, 245, 0.74);}
+#cinco:hover {background-color: rgba(172, 255, 47, 0.836);}
+
+
+.colunadois {
+    float: left;
+    padding: 0 10%;
+    position: relative;
+    width: 30%;
+    margin-top: 2%;
+    text-align: center;
+}
+.colunatres {
+    float: left;
+    padding: 0 5%;
+    position: relative;
+    width: 20%;
+    margin-top: 2%;
+    text-align: center;
+    margin: 7% 20px;
+}
+
+#agricultura {
+    padding: 22%;
+    background: url("imagens/muda_planta.jpg");
+    color: whitesmoke;
+    text-shadow: rgba(56, 55, 55, 0.815) 2px 1px;
+    background-size: 100% 65%;
+    height: 100%;
+    text-align: center;
+    font-size: 13pt;
+} /*QUERIA COLOCAR O VERDE MEIO EM CIMA IGUAL NO OUTRO SITE*/
+#agricultura p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(172, 255, 47, 0.295);
+    padding: 5px 40px;
+}
+
+
+#contribuir {
+    text-align: center;
+    text-shadow: rgba(85, 85, 85, 0.815) 1px 1px;
+}
+#topicos_contribuir {
+    background-color: #f7f7f7
+;   padding: 0 20px;
+    float: left;
+}
+.icone {
+    width: 51px;
+}
+.colunaseis {
+    float: left;
+    padding: 10px 55px;
+    position: relative;
+    width: 30%;
+    margin: 0 5%;
+    text-align: center;
+    font-size: 12pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+}
+.colunaseis img {
+    align-content: center;
+}
+.titulo {
+    color: yellowgreen;
+    font-size: 15pt;
+    text-shadow: rgba(85, 85, 85, 0.815) 1px 1px;
+}
+.coluna_prato {
+    float: left;
+    padding: 0 5%;
+    position: relative;
+    background-repeat: no-repeat;
+    width: 45%;
+}
+#mundo {
+    background-color: rgb(214, 241, 159);
+    padding: 30px;
+    float: right;
+}
+#mundo h2 {
+    text-shadow: rgba(85, 85, 85, 0.815) 1px 1px;
+}
+#mundo p{
+    color: gray;
+}
+#prato_vazio {
+    background-size: 100% 100%;
+    width: 40%;
+    position: relative;
+    margin:0;
+    float: left;
+    max-width: none;
+    background-repeat: no-repeat;
+    background-position: 100% 30%;
+    padding-left: 0;
+}
+.coluna img {
+    padding-left: none;
+    margin-left: none;
+    margin-right: 25px;
+}
+.coluna h2{
+    padding-left: 10%;
+    text-align: center;
+    text-shadow: rgba(85, 85, 85, 0.815) 1px 1px;
+}
+.coluna p {
+    padding-left: 10%;
+    padding-right: 0;
+}
+
+#america_latina {
+    background-color: #f7f7f7;
+;   padding: 30px;
+    float: left; 
+}
+#america_latina h2{
+    text-shadow: rgba(85, 85, 85, 0.815) 1px 1px;
+}
+#america_latina p{
+    color: gray;
+}
+.ultima_coluna {
+    float: left;
+    padding: 0 5%;
+    position: relative;
+    width: 40%;
+}
+.ultima_coluna h2 {
+    text-align: center;
+}
+#pao_fundo { 
+    background-size: 100% 100%;
+    width: 40%;
+    position: relative;
+    margin:none;
+    float: right;
+    max-width: none;
+    background-repeat: no-repeat;
+    background-position: 100% 30%;
+}
+
+
+
+/*rodapé*/
+
+.rodape {
+    float: left;
+    padding: 0 5%;
+    position: relative;
+    width: 40%;
+    background-color: rgb(9, 110, 0);
+    color: whitesmoke;
+    text-shadow: rgba(56, 55, 55, 0.815) 2px 1px;
+    padding-bottom: 8px;
+    margin-bottom: 0;
+    padding-bottom: 5%;
+}
+.rodape a {
+    color: whitesmoke;
+}
+
+
+
+
+
+
+
+
+@media all and (max-width: 768px) {
+    .coluna, .colunadois, .colunatres, .colunaseis, .coluna_prato, .ultima_coluna, .rodape{
+        display: block;
+        width: 100%;
+        padding: 0%;
+        margin: 10px;
+        float: none;
+    }
+}
